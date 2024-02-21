@@ -1,3 +1,5 @@
+//data base com as tabelas e colunas do exercicio;
+
 teste=# CREATE DATABASE bd_sistema_bancario;
 CREATE DATABASE
 teste=# \c bd_sistema_bancario;
@@ -49,3 +51,14 @@ bd_sistema_bancario=# DROP TABLE APOSTA;
 DROP TABLE
 bd_sistema_bancario=# DROP TABLE FIFA;
 DROP TABLE
+
+//alteração de dados das tabelas;
+
+ALTER TABLE CLIENTE ADD COLUMN IDADE INTEGER;
+ALTER TABLE CLIENTE RENAME COLUMN IDADE TO IDADES;
+ALTER TABLE CLIENTE DROP COLUMN IDADES;
+ALTER TABLE CLIENTE RENAME TO TBCLIENTE;
+
+//criação de um schema;
+
+CREATE SCHEMA FILLIPE;

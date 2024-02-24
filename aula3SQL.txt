@@ -1,0 +1,19 @@
+postgres=# \c bd_aula03;
+You are now connected to database "bd_aula03" as user "postgres".
+bd_aula03=# create table tbl_cliente(codigo_cliente integer primary key,nome not null,cidade text, endereco text);
+ERROR:  syntax error at or near "not"
+LINE 1: ...l_cliente(codigo_cliente integer primary key,nome not null,c...
+                                                             ^
+bd_aula03=# create table tbl_cliente(codigo_cliente integer primary key,nome text not null,cidade text, endereco text);
+CREATE TABLE
+bd_aula03=# create table tbl_titulo(codigo_titulo integer primary key,titulo text not null,descricao text,categoria text);
+CREATE TABLE
+bd_aula03=# create table tbl_emprestimo(numero_emprestimo integer primary key,codigo_cliente text,codigo_livro text);
+CREATE TABLE
+bd_aula03=# create table tbl_livros(cod_livros integer primary key,codigo titulo text,status text);
+ERROR:  syntax error at or near "text"
+LINE 1: ...vros(cod_livros integer primary key,codigo titulo text,statu...
+                                                             ^
+bd_aula03=# create table tbl_livros(cod_livros integer primary key,codigo_titulo text,status text);
+CREATE TABLE
+bd_aula03=#

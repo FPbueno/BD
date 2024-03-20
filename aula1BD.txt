@@ -3,19 +3,7 @@
 teste=# CREATE DATABASE bd_sistema_bancario;
 CREATE DATABASE
 teste=# \c bd_sistema_bancario;
-You are now connected to database "bd_sistema_bancario" as user "postgres".
-bd_sistema_bancario=# CREATE TABLE CLIENTE(NOME_CLIENTE TEXT,CIDADE_CLIENTE TEXT,ENDERECO_CLIENTE);
-ERROR:  syntax error at or near ")"
-LINE 1: ...NTE(NOME_CLIENTE TEXT,CIDADE_CLIENTE TEXT,ENDERECO_CLIENTE);
-                                                                     ^
-bd_sistema_bancario=# CREATE TABLE CLIENTE(NOME_CLIENTE TEXT,CIDADE_CLIENTE TEXT,ENDERECO_CLIENTE);
-ERROR:  syntax error at or near ")"
-LINE 1: ...NTE(NOME_CLIENTE TEXT,CIDADE_CLIENTE TEXT,ENDERECO_CLIENTE);
-                                                                     ^
-bd_sistema_bancario=# CREATE TABLE CLIENTE(NOMECLIENTE TEXT,CIDADECLIENTE TEXT,ENDERECOCLIENTE);
-ERROR:  syntax error at or near ")"
-LINE 1: ...LIENTE(NOMECLIENTE TEXT,CIDADECLIENTE TEXT,ENDERECOCLIENTE);
-                                                                     ^
+You are now connected to database "bd_sistema_bancario" as user "postgres".                                                                     ^
 bd_sistema_bancario=# CREATE TABLE CLIENTE(NOME_CLIENTE TEXT,CIDADE_CLIENTE TEXT,ENDERECO_CLIENTE TEXT);
 CREATE TABLE
 bd_sistema_bancario=# CREATE TABLE CONTA(NUMERO_CONTA TEXT,NOME_AGENCIA TEXT,SALDO TEXT);
